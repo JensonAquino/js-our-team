@@ -45,12 +45,12 @@ const generateCard = () => {
   let cardInner = "";
   teamMembers.forEach(curcard => {
     cardInner += `
-       <div class="col-3 bg-primary p-2 mt-4 d-flex ">
+       <div class="col-lg-3 col-md-5 col-sm-12 bg-black p-2 mt-4 d-flex ">
                 <img src="./assets/${curcard.img}" alt="">
                 <div>
-                    <p>${curcard.name}</p>
-                    <p>${curcard.role}</p>
-                    <p>${curcard.email}</p>
+                    <h4 class="text-light">${curcard.name}</h4>
+                    <p class="text-light">${curcard.role}</p>
+                    <p class="text-info">${curcard.email}</p>
                 </div>    
             </div>
       `
